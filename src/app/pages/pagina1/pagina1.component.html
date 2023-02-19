@@ -1,1 +1,11 @@
-<p>pagina1 works!</p>
+<p>{{ nombre }}</p>
+
+<input type="text" [(ngModel)]="nombre">
+
+<button (click)="evento()">
+    click
+</button>
+
+<app-muestra-nombre [nombre]="nombre"></app-muestra-nombre>
+
+<h3>Segundos: {{ segundos }}</h3>
